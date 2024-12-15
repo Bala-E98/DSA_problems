@@ -6,16 +6,13 @@ var createCounter = function(init) {
     let Currentcount = init;
     return {
         increment: () => {
-           Currentcount = ++Currentcount;
-          return Currentcount;
+          return ++Currentcount;
         },
         decrement: () => {
-           Currentcount = --Currentcount
-          return Currentcount;
+          return --Currentcount;
         },
         reset: () => {
-            Currentcount = init
-           return Currentcount
+            return Currentcount = init;
         }
     }
 };
